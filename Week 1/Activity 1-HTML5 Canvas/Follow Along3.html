@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Saving and Restoring Canvas State</title>
+		<style type="text/css">
+			#Canvas2, #Canvas3, #Canvas4 {
+				border: dotted 1px black;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var theCanvas2 = document.getElementById('Canvas2');
+				if (theCanvas2 && theCanvas2.getContext) {
+					var ctx2 = theCanvas2.getContext("2d");
+					if (ctx2) {
+						
+						//gradient line widths
+						for(var i=0; i<10; i++){
+							ctx2.beginPath();
+							ctx2.lineWidth = 1+i;
+							ctx2.moveTo(25, 25+i*15);
+							ctx2.lineTo(475, 25+i*15);
+							ctx2.stroke();
+						}//closes for (var i=0...
+					}//closes for (ctx2)
+				}//close if (theCanvas2 && theCanvas2.getContext)
+				
+				var theCanvas3 = document.getElementById("Canvas3");
+				if(theCanvas3 && theCanvas3.getContext){
+					var ctx3 = theCanvas3.getContext("2d");
+					
+					if(ctx3){
+						//draw guidelines
+						ctx3.strokeStyle = "cyan";
+						ctx3.lineWidth = 1;
+						
+						ctx3.beginPath();
+						ctx3.moveTo(50,25);
+						ctx3.lineTo(50,175);
+						ctx3.moveTo(450, 25);
+						ctx3.lineTo(450, 175);
+						ctx3.stroke();
+						
+						//draw line using  each type of line cap
+						ctx3.lineWidth = 25;
+						ctx3.strokeStyle = "black";
+						ctx3.lineCap = "butt";
+						ctx3.beginPath();
+						ctx3.moveTo(50,50);
+						ctx3.lineTo(450,50);
+						ctx3.stroke();
+						
+						
+						ctx3.lineWidth = 25;
+						ctx3.strokeStyle = "black";
+						ctx3.lineCap = "round";
+						ctx3.beginPath();
+						ctx3.moveTo(50,100);
+						ctx3.lineTo(450,100);
+						ctx3.stroke();
+						
+						
+						ctx3.lineCap = "square";
+						ctx3.beginPath();
+						ctx3.moveTo(50,150);
+						ctx3.lineTo(450,150);
+						ctx3.stroke();
+						
+						
+						}//closes ctx3
+					
+					}//closes if(theCanvas3 && the Canvas3.getContext)
+					
+					var theCanvas4 = document.getElementById("Canvas4");
+				if(theCanvas4 && theCanvas4.getContext){
+					var ctx4 = theCanvas4.getContext("2d");
+					
+					if(ctx4){
+							ctx4.lineWidth = 15;
+							ctx4.strokeStyle = "black";
+							
+							ctx4.lineJoin = "round";
+							
+							ctx4.beginPath();
+							ctx4.moveTo(25,150);
+							ctx4.lineTo(75, 50);
+							ctx4.lineTo(125,150);
+							ctx4stroke();
+							
+							
+							
+							ctx4.lineJoin = "bevel";
+							
+							ctx4.beginPath();
+							ctx4.moveTo(175,150);
+							ctx4.lineTo(225, 50);
+							ctx4.lineTo(275,150);
+							ctx4.stroke();
+							
+							
+							ctx4.lineJoin = "miter";
+							ctx4.miterLimit = 10;
+							
+							ctx4.beginPath();
+							ctx4.moveTo(325,150);
+							ctx4.lineTo(375, 50);
+							ctx4.lineTo(425,150);
+							ctx4.stroke();
+							
+							}//closes if(ctx4)
+						
+						}//closes if (theCanvas4 && theCanvas4.getContext)
+				
+				
+			}//closes window.onload
+		</script>
+	</head>
+	<body>
+		<h1>Saving and Restoring the Canvas State</h1>
+		<p>This example shows how to manage the canvas state using save() and restore()</p>
+		<canvas id="Canvas2" width="500" height="200">Your browser does not support canvas.</canvas>
+        <p> Line Caps</p>
+        <canvas id="Canvas3" width="500" height="200"> Your browser does not support canvas.</canvas>
+        <p>Line Joins</p>
+        <canvas id="Canvas4" width="500" height="200">Your browser does not support canvas.</canvas>
+	</body>
+</html>

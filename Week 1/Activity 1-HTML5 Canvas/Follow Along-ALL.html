@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML Canvas</title>
+        <style type="text/css">
+			#Canvas1, #Canvas2, #Canvas3, #Canvas4, #Canvas5, #Canvas6, #Canvas7, #Canvas8, #Canvas9, #Canvas10, #Canvas11, #Canvas12, #Canvas13, #Canvas14, #Canvas15, #Canvas16, #Canvas17, #Canvas18, #Canvas19, #Canvas20, #Canvas21, #Canvas22, #Canvas23, #Canvas24, #Canvas25, #Canvas26, #Canvas27, #Canvas28, #Canvas29, #Canvas30, #Canvas31, #Canvas32 {
+				border: dotted 1px black;
+				
+				}
+		</style>
+        <script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body>
+		<h1>First Canvas Example</h1>
+		<p>This document contains our first canvas example</p>
+        
+        <canvas id="Canvas1" width="400" height="300">
+        	Your browser does not support canvas.
+        </canvas>
+        
+        
+        
+        
+        <h1>Drawing Lines In Canvas</h1>
+		<p>This example will draw several styles of lines. First: basic line width</p>
+		<canvas id="Canvas2" width="500" height="200">Your browser does not support canvas.</canvas>
+        <p> Line Caps</p>
+        <canvas id="Canvas3" width="500" height="200"> Your browser does not support canvas.</canvas>
+        <p>Line Joins</p>
+        <canvas id="Canvas4" width="500" height="200">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>Saving and Restoring the Canvas State</h1>
+		<p>This example shows how to manage the canvas state using save() and restore()</p>
+		<canvas id="Canvas5" width="500" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>Drawing Paths</h1>
+		<p>This example will draw paths, both open and closed</p>
+		<canvas id="Canvas6" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>Drawing Arcs</h1>
+		<p>This example will draw arcs, both open and closed</p>
+		<canvas id="Canvas7" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>Drawing Bezier and Quadratic Curves</h1>
+		<p>This example will draw bezier and quadratic curves, along with their control points 
+		so you can see how the curve is affected by the control point.</p>
+		<canvas id="Canvas8" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>Drawing Text</h1>
+		<p>This example will render text on the canvas</p>
+		<canvas id="Canvas9" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>Drawing Shadows</h1>
+		<p>All drawing operations can produce shadows. This example shows how to make shadows on a variety of canvas operations.</p>
+		<canvas id="Canvas10" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>Drawing Patterns</h1>
+		<p>Patterns can be created from images, videos, or even other canvas elements.</p>
+		<canvas id="Canvas11" width="700" height="300">Your browser does not support canvas.</canvas>
+		<canvas id="patCan" width="25" height="25"></canvas>
+        
+        
+        
+        
+        <h1>Drawing Gradients</h1>
+		<p>The HTML5 Canvas supports two kinds of gradients - linear and radial.</p>
+		<canvas id="Canvas12" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>Drawing Images</h1>
+		<p>Images can be drawn directly onto a canvas element in a variety of ways. Your code can drawn an image
+		directly from an IMG or VIDEO element that is already in the page or loaded dynamically via script, or 
+		another canvas element can be used as a source image.</p>
+		<canvas id="Canvas13" width="500" height="650">Your browser does not support canvas.</canvas>
+		
+		<!-- source images used in this example -->
+		<img id="img1" src="images/stop-sign.jpg" width="477" height="600" style="display:none;">
+		<video id="vid1" src="video/video.mp4" loop style="display:none"></video>
+        
+        
+        
+        
+        <h1>Clipping Paths</h1>
+		<p>Clipping paths restrict drawing to a particular area of the canvas. Think of clipping paths as masks - 
+        areas where the mask is empty show through, while areas where the mask is opaque do not.</p>
+        <p>Any path can be a clipping path. You simply draw the path as normal and then call the context's clip() 
+        function to create one.</p>
+		<canvas id="Canvas14" width="800" height="600">Your browser does not support canvas.</canvas>
+		<img id="img2" src="images/train.jpg" width="800" height="600" style="display:none;">
+        
+        
+        
+        
+        <h1>Clipping Paths 2</h1>
+		<p>Clipping paths restrict drawing to a particular area of the canvas. Think of clipping paths as masks - 
+        areas where the mask is empty show through, while areas where the mask is opaque do not.</p>
+        <p>Any path can be a clipping path. You simply draw the path as normal and then call the context's clip() 
+        function to create one.</p>
+		<canvas id="Canvas15" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>The Translate Transform</h1>
+		<p>The translate transform simply repositions the origin of the canvas. In this demo, a rectangle is drawn at the default origin of 0,0. A second
+		rectangle is drawn at 0,0 after the translate transform has been applied.</p>
+		<canvas id="Canvas16" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>The Scale Transform</h1>
+		<p>The scale transform causes drawing operations to be multiplied by the given scale multiples. Here, a rectangle is drawn,
+		then a scale transform is applied, and the same rectangle is drawn again (but offset so the difference can be seen). Even though
+		they are drawn with the same width and height, the scale transform causes the second rectangle to be drawn larger.</p>
+		<canvas id="Canvas17" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>The Rotate Transform</h1>
+		<p>.</p>
+		<canvas id="Canvas18" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>Drawing with the Global Alpha</h1>
+		<p>The canvas' globalAlpha setting allows you to set the opacity level of all objects drawn on the canvas at once. In
+		This example, the globalAlpha is gradually reduced from 1.0 (the default) down to 0.1.</p>
+		<canvas id="Canvas19" width="700" height="300">Your browser does not support canvas.</canvas>
+        
+        
+        
+        
+        <h1>The Canvas Compositing Methods</h1>
+		<p>This demo shows how each of the compositing methods affects how drawing operations are made to the canvas.</p>
+		<div>
+			<canvas id="Canvas20" width="150" height="150">Your browser does not support canvas.</canvas>
+			<canvas id="Canvas21" width="150" height="150">Your browser does not support canvas.</canvas>
+			<canvas id="Canvas22" width="150" height="150">Your browser does not support canvas.</canvas>
+			<canvas id="Canvas23" width="150" height="150">Your browser does not support canvas.</canvas>
+			<canvas id="Canvas24" width="150" height="150">Your browser does not support canvas.</canvas>
+			<canvas id="Canvas25" width="150" height="150">Your browser does not support canvas.</canvas>
+		</div>
+		<div>
+			<canvas id="Canvas26" width="150" height="150">Your browser does not support canvas.</canvas>
+			<canvas id="Canvas27" width="150" height="150">Your browser does not support canvas.</canvas>
+			<canvas id="Canvas28" width="150" height="150">Your browser does not support canvas.</canvas>
+			<canvas id="Canvas29" width="150" height="150">Your browser does not support canvas.</canvas>
+			<canvas id="Canvas30" width="150" height="150">Your browser does not support canvas.</canvas>
+			<canvas id="Canvas31" width="150" height="150">Your browser does not support canvas.</canvas>
+		</div>
+        
+        
+        
+        
+        <h1>Simple Animation</h1>
+		<p>Simple animation in Canvas using the setInterval tag</p>
+		<canvas id="Canvas32" width="800" height="400">Your browser does not support canvas.</canvas>
+		
+		<!-- source images used in this example -->
+		<img id="img3" src="images/flowers.jpg" width="150" height="150" >
+        
+	</body>
+</html>

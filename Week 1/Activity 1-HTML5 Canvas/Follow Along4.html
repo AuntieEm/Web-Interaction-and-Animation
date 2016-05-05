@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Paths</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var theCanvas5 = document.getElementById('Canvas5');
+				if (theCanvas5 && theCanvas5.getContext) {
+					var ctx5 = theCanvas5.getContext("2d");
+					if (ctx5) {
+						
+						//Setup some basic drawing info
+						ctx5.strokeStyle = "red";
+						ctx5.fillStyle = "yellow";
+						ctx5.lineWidth= 10;
+						
+						//Draw A rectangle
+						
+						ctx5.fillRect(25,25,100, 125);
+						ctx5.strokeRect(25,25,100,125);
+						
+						//Save our settings or State
+						ctx5.save();
+						
+						// Draw another rectangle with different settings
+						ctx5.strokeStyle= "green";
+						ctx5.fillStyle = "blue";
+						ctx5.lineWidth= 5;
+						
+						ctx5.fillRect(175,25,100, 125);
+						ctx5.strokeRect(175, 25, 100, 125);
+						
+						//restore our drawing state
+						ctx5.restore();
+						
+						//Draw a 3rd Rectangle
+						ctx5.fillRect(325,25,100,125);
+						ctx5.strokeRect(325,25,100,125);
+						
+						
+					}//closes if (ctx5)
+				}//closes if (theCanvas5 && theCanvas5.getContext)
+				
+				
+				
+				
+				
+			}//closes window.onload = function()
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Paths</h1>
+		<p>This example will draw paths, both open and closed</p>
+		<canvas id="Canvas5" width="700" height="300">Your browser does not support canvas.</canvas>
+	</body>
+</html>
