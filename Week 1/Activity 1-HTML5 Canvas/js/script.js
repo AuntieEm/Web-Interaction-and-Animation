@@ -481,7 +481,7 @@ window.onload = function() {
 						var srcImg = document.getElementById("img1");
 						
 						//Draw an image
-						//ctx13.drawImage(srcImg, 0,0);
+						ctx13.drawImage(srcImg, 0,0);
 						 
 						//drawa a scaled down image
 						//drawImage(srcImg, dx, dy, dw, dh);
@@ -492,14 +492,14 @@ window.onload = function() {
 						//ctx13.drawImage(srcImg, 285,40, 95,140, 50,50, 190,280);
 						
 						//create a variable that holds a video
-						var srcVid = document.getElementById("vid1");
-						srcVid.play();
+						//var srcVid = document.getElementById("vid1");
+						//srcVid.play();
 						
 						//set interval(funciton, Time-ms);		
-						setInterval(function(){
-							ctx13.drawImage(srcVid, 0,0, 480,270);
+						//setInterval(function(){
+							//ctx13.drawImage(srcVid, 0,0, 480,270);
 							
-							}, 30);
+							//}, 30);
 										
 						}//closes if (ctx13)
 				}//closes if (theCanvas13 && theCanvas13.getContext)

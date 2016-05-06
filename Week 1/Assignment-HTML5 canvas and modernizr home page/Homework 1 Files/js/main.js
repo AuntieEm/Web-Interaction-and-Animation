@@ -195,8 +195,8 @@ if(theCanvas4 && theCanvas4.getContext){
 /*******************************************
 PART 5
 
-Practice using text.
-Draw text into your canvas.  It can said whatever you would like in any color.
+- DONE - Practice using text.
+- DONE - Draw text into your canvas.  It can said whatever you would like in any color.
 
 ********************************************/
 
@@ -238,11 +238,36 @@ var theCanvas6 = document.getElementById("Canvas6");
 if(theCanvas6 && theCanvas6.getContext){
 	var ctx6 = theCanvas6.getContext("2d");
 	if(ctx6){
-		
+		var srcImg = document.getElementById("img1");
+		ctx6.drawImage(srcImg, 0,0);
 		
 		}//closes if ctx6
 	
 	}//closes if part 6
+	
+	var theCanvas7 = document.getElementById("Canvas7");
+
+if(theCanvas7 && theCanvas7.getContext){
+	var ctx7 = theCanvas7.getContext("2d");
+	if(ctx7){
+		var srcImg = document.getElementById("img1");
+		ctx7.drawImage(srcImg, 50,50,1650,544);
+		
+		}//closes if ctx7
+	
+	}//closes if canvas 7
+	
+	var theCanvas8 = document.getElementById("Canvas8");
+
+if(theCanvas8 && theCanvas8.getContext){
+	var ctx8= theCanvas8.getContext("2d");
+	if(ctx8){
+		var srcImg = document.getElementById("img1");
+		ctx8.drawImage(srcImg, 4,40,95,140,50,50);
+		
+		}//closes if ctx8
+	
+	}//closes if part 8
 
 
 
@@ -259,16 +284,16 @@ You must use at least 3 different methods.
 
 // Draw scene here
 
-var theCanvas7 = document.getElementById("Canvas7");
+var theCanvas9 = document.getElementById("Canvas7");
 
-if(theCanvas7 && theCanvas7.getContext){
-	var ctx7 = theCanvas7.getContext("2d");
-	if(ctx7){
+if(theCanvas7 && theCanvas9.getContext){
+	var ctx9 = theCanvas9.getContext("2d");
+	if(ctx9){
 		
 		
-		}//closes if ctx7
+		}//closes if ctx9
 	
-	}//closes if part 7
+	}//closes if part 9
 
 
 
