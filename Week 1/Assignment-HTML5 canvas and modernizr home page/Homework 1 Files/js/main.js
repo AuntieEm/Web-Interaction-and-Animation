@@ -57,10 +57,10 @@ if(theCanvas1 && theCanvas1.getContext){
 /*******************************************
 PART 2
 
-Draw a circle starting at point (50 ,50)
-That has a radius of 20 px 
-Set the color of the circle to a shade of red and set the alpha to .5
-Set the stroke color to black and use a radius of 30px for this circle.
+- DONE - Draw a circle starting at point (50 ,50)
+- DONE - That has a radius of 20 px 
+- DONE - Set the color of the circle to a shade of red and set the alpha to .5
+- DONE - Set the stroke color to black and use a radius of 30px for this circle.
 
 Reminder - set the style first then draw.
 Use the arc method
@@ -74,7 +74,15 @@ var theCanvas2 = document.getElementById("Canvas2");
 if(theCanvas2 && theCanvas2.getContext){
 	var ctx2 = theCanvas2.getContext("2d");
 	if(ctx2){
-		
+		ctx2.strokeStyle = "black";
+		ctx2.fillStyle = "rgba(237,28,26,.5)";
+		ctx2.lineWidth = 10;
+		var degrees = 360;
+		var radians = (degrees/180)*Math.PI;
+		ctx2.beginPath();
+		ctx2.arc(50,50,  20,0, radians);
+		ctx2.fill();
+		ctx2.stroke();
 		
 		}//closes if ctx2
 	
