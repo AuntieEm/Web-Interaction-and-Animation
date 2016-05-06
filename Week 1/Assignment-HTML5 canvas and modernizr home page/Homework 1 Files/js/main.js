@@ -139,12 +139,12 @@ if(theCanvas3 && theCanvas3.getContext){
 /*******************************************
 PART 4
 
-Practice drawing with Bezier curves.
-Try drawing the top to an umbrella.
-This should have one large arc (a half circle) on the top and scalloped edges on the bottom.
+- DONE - Practice drawing with Bezier curves.
+- DONE - Try drawing the top to an umbrella.
+- DONE - This should have one large arc (a half circle) on the top and scalloped edges on the bottom.
 
-Position, height, width and color are your choice.
-Do not overlap any other object.
+- DONE - Position, height, width and color are your choice.
+- DONE - Do not overlap any other object.
 
 ********************************************/
 
@@ -153,8 +153,39 @@ Do not overlap any other object.
 var theCanvas4 = document.getElementById("Canvas4");
 
 if(theCanvas4 && theCanvas4.getContext){
-	var ctx4 = theCanvas2.getContext("2d");
+	var ctx4 = theCanvas4.getContext("2d");
 	if(ctx4){
+		
+		ctx4.strokeStyle = "blue";
+		ctx4.lineWidth = 5;
+		var degrees = 180;
+		var radians = (degrees/180)*Math.PI;
+		ctx4.beginPath();
+		ctx4.arc(150,150,100,0,radians);
+		ctx4.stroke();
+		
+		
+		
+		ctx4.beginPath();
+		ctx4.moveTo(250,150);
+		ctx4.quadraticCurveTo(225,200, 200,150);
+		ctx4.stroke();	
+		
+		ctx4.beginPath();
+		ctx4.moveTo(200,150);
+		ctx4.quadraticCurveTo(175,200, 150,150);
+		ctx4.stroke();
+		
+		ctx4.beginPath();
+		ctx4.moveTo(150,150);
+		ctx4.quadraticCurveTo(125,200, 100,150);
+		ctx4.stroke();
+		
+		ctx4.beginPath();
+		ctx4.moveTo(100,150);
+		ctx4.quadraticCurveTo(75,200, 50,150);
+		ctx4.stroke();
+		
 		
 		
 		}//closes if ctx4
