@@ -207,6 +207,11 @@ var theCanvas5 = document.getElementById("Canvas5");
 if(theCanvas5 && theCanvas5.getContext){
 	var ctx5 = theCanvas5.getContext("2d");
 	if(ctx5){
+		var theString = "Practice Using Text";
+		
+		ctx5.font = "25pt Georgia";
+		ctx5.fillStyle = "purple";
+		ctx5.fillText(theString, 50,50);
 		
 		
 		}//closes if ctx5
