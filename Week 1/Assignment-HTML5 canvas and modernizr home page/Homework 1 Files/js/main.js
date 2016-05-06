@@ -1,7 +1,7 @@
 /*
-     Name:
-     Date:
-     Class & Section:  WIA-####
+     Name: Emily Davis
+     Date: 05/05/2016
+     Class & Section:  WIA-1605
      Comments: "HTML5 Canvas Drawing"
  */
 
@@ -16,13 +16,16 @@ HTML5 Shape Drawing Activity
 /*******************************************
 FILE SETUP
 
-// Setup up 7 different Canvases in index.html one for each problem.
-//Link Modernizr.js
-// Link the main.js file
-// Setup the call to that canvas and get it's 2d context
+// - DONE - Setup up 7 different Canvases in index.html one for each problem.
+// - DONE -Link Modernizr.js
+// - DONE - Link the main.js file
+// - DONE - Setup the call to that canvas and get it's 2d context
 //Use Modernizr to verify that your browser supports canvas, include a fallback message
+*/
 
-
+window.onload = function(){
+	"use strict";
+	
 /*******************************************
 PART 1
 
@@ -36,6 +39,7 @@ Reminder - set the style first then draw.
 
 //Draw Rectangle here
 
+var theCanvas1 = document.getElementById("Canvas1");
 
 /*******************************************
 PART 2
@@ -124,4 +128,9 @@ You must use at least 3 different methods.
 
 // Draw scene here
 
+
+
+
+
+};//closes onload function
 
