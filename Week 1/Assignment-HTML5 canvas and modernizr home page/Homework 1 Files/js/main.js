@@ -223,9 +223,9 @@ PART 6
 
 Pixel manipulation.
 Draw the image logo.png into the canvas in the following 3 ways.
-1. The image exactly as it is.
-2. Shrink the image by 50%
-3. Slice a section of the logo out and draw that onto the canvas.
+- DONE - 1. The image exactly as it is.
+- DONE - 2. Shrink the image by 50%
+- DONE - 3. Slice a section of the logo out and draw that onto the canvas.
 
 Reminder to use the drawImage method for all 3 of the ways.
 
@@ -284,11 +284,52 @@ You must use at least 3 different methods.
 
 // Draw scene here
 
-var theCanvas9 = document.getElementById("Canvas7");
+var theCanvas9 = document.getElementById("Canvas9");
 
-if(theCanvas7 && theCanvas9.getContext){
+if(theCanvas9 && theCanvas9.getContext){
 	var ctx9 = theCanvas9.getContext("2d");
 	if(ctx9){
+		
+		var theString = "Tut tut. Looks like rain.";
+		
+		ctx9.font = "25pt Georgia";
+		ctx9.fillStyle = "purple";
+		ctx9.fillText(theString, 50,50);
+		
+		ctx9.strokeStyle = "blue";
+		ctx9.lineWidth = 5;
+		var degrees = 180;
+		var radians = (degrees/180)*Math.PI;
+		ctx9.beginPath();
+		ctx9.arc(150,150,100,0,radians);
+		ctx9.stroke();
+		
+		ctx9.beginPath();
+		ctx9.moveTo(200,150);
+		ctx9.lineTo(200,50);
+		ctx9.stroke();
+		
+		
+		ctx9.beginPath();
+		ctx9.moveTo(250,150);
+		ctx9.quadraticCurveTo(225,200, 200,150);
+		ctx9.stroke();	
+		
+		ctx9.beginPath();
+		ctx9.moveTo(200,150);
+		ctx9.quadraticCurveTo(175,200, 150,150);
+		ctx9.stroke();
+		
+		ctx9.beginPath();
+		ctx9.moveTo(150,150);
+		ctx9.quadraticCurveTo(125,200, 100,150);
+		ctx9.stroke();
+		
+		ctx9.beginPath();
+		ctx9.moveTo(100,150);
+		ctx9.quadraticCurveTo(75,200, 50,150);
+		ctx9.stroke();
+		
 		
 		
 		}//closes if ctx9
