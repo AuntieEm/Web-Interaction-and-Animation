@@ -93,11 +93,11 @@ if(theCanvas2 && theCanvas2.getContext){
 /*******************************************
 PART 3
 
-Practice using Path drawing.
-Create a 5-point star shaped pattern using the lineTo method.
-Begin this shape at (100, 100)
+- DONE - Practice using Path drawing.
+- DONE - Create a 5-point star shaped pattern using the lineTo method.
+- DONE - Begin this shape at (100, 100)
 
-Height and width and color are up to you.
+- DONE - Height and width and color are up to you.
 
 ********************************************/
 
@@ -109,6 +109,26 @@ var theCanvas3 = document.getElementById("Canvas3");
 if(theCanvas3 && theCanvas3.getContext){
 	var ctx3 = theCanvas3.getContext("2d");
 	if(ctx3){
+		
+		ctx3.lineWidth = 10;
+		ctx3.strokeStyle = "black";
+		ctx3.fillStyle = "red";
+		ctx3.lineJoin = "round";
+		ctx3.beginPath();
+		ctx3.moveTo(100,100);
+		ctx3.lineTo(150,0);
+		ctx3.lineTo(200,100);
+		ctx3.lineTo(300,110);
+		ctx3.lineTo(200,175);
+		ctx3.lineTo(250,300);
+		ctx3.lineTo(150,225);
+		ctx3.lineTo(75,300);
+		ctx3.lineTo(100,175);
+		ctx3.lineTo(0,150);
+		ctx3.closePath();
+		ctx3.fill();
+		ctx3.stroke();
+		
 		
 		
 		}//closes if ctx3
