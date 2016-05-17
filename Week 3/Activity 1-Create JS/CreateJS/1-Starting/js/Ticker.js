@@ -22,7 +22,42 @@ window.onload = function() {
 	
 	stage.addChild(shape);
 	
-	stage.update();
+	//stage.update();
+	
+	
+	//Ticker class controls time
+	//a centrallized heart beat that makes a "tick"
+	//create a listener for that trick
+	
+	//set our frame rate. FPS frames per second
+	//default value is 20 fps
+	createjs.Ticker.setFPS(30);
+	//30 frames per second
+	
+	//create a listener
+	createjs.Ticker.addEventListener("tick", ticks);
+	
+	function ticks(e){
+		
+		//console.log("tick");
+		
+		shape.rotation +=8;
+		
+		shape.alpha -=.05;
+		
+		shape.x +=5;
+		shape.y +=5;
+		
+		shape.skewX +=20;
+		shape.skewY +=20;
+		
+		shape.scaleX +=.2;
+		shape.scaleY +=.2;
+		
+		
+		stage.update();
+		
+		}
 	
 	
 			
