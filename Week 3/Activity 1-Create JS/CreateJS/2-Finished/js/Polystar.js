@@ -1,4 +1,4 @@
-window.onload = function() {
+//adwindow.onload = function() {
 	
 	var canvas = document.getElementById("canvas1");
 	var stage = new createjs.Stage(canvas);
