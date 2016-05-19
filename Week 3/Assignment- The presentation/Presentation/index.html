@@ -9,13 +9,25 @@
 		<title>HTML</title>
         
         <link href="css/style.css" rel="stylesheet" />
-        <link href="includes/icheck-1.x/demo/css/normalize.css" rel="stylesheet"/>
-        <link href="includes/icheck-1.x/demo/css/custom.css" rel="stylesheet" />
-        <link href="includes/icheck-1.x/skins/all.css?v=1.0.2" rel="stylesheet">
-        <script type="text/javascript" src="includes/jquery-1.12.3.min"></script>
-        <script type="text/javascript" src="includes/icheck-1.x/demo/js/zepto.js"></script>
-        <script type="text/javascript" src="includes/icheck-1.x/icheck.min.js"></script>
+        <link href="includes/icheck/demo/css/normalize.css" rel="stylesheet">
+        <link href="includes/icheck/demo/css/custom.css" rel="stylesheet" />
+        <link href="includes/icheck/skins/all.css" rel="stylesheet" />
+     	<link href="includes/icheck/skins/minimal/red.css" rel="stylesheet" /> 
+        <link href="includes/icheck/skins/minimal/orange.css" rel="stylesheet" /> 
+        <link href="includes/icheck/skins/minimal/yellow.css" rel="stylesheet" /> 
+        <link href="includes/icheck/skins/minimal/grene.css" rel="stylesheet" /> 
+        <link href="includes/icheck/skins/minimal/blue.css" rel="stylesheet" /> 
+        <link href="includes/icheck/skins/minimal/red.css" rel="stylesheet" /> 
+        <script type="text/javascript" src="includes/icheck/demo/js/jquery.js"></script>
+        
+        
+        <script type="text/javascript" src="includes/icheck/icheck.min.js"></script>
+        
+        <script type="text/javascript" src="includes/icheck/demo/js/custom.min.js"></script>
+        
+        
         <script type="text/javascript" src="js/script.js"></script>
+        
         
         
        
@@ -24,6 +36,408 @@
 	</head>
 
 	<body>
+    	<div class="skins">
+        	<h2>Skins</h2>
+            <!----------MINIMAL SKINS---------->
+            <div class="skin skin-minimal">
+            	<h3>Minimal Skins</h3>
+                <dl class="clear">
+                	<dd class="selected">
+                        <div class="skin-section">
+                            <h4>Checkboxes</h4>
+                            <ul class="list">
+                                <li>
+                                	<input type="checkbox" id="minimal-checkbox-1" class="icheckbox_minimal-red" />
+                                    <label for="minimal-checkbox-1">Normal Checkbox Unchecked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="minimal-checkbox-2" class="icheckbox_minimal-red" checked/>
+                                    <label for="minimal-checkbox-2">Normal Checkbox Checked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="minimal-checkbox-disabled" class="icheckbox_minimal-red" disabled />
+                                    <label for="minimal-checkbox-disabled">Disabled Checkbox</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="minimal-checkbox-disabled-checked" class="icheckbox_minimal-red" disabled checked />
+                                    <label for="minimal-checkbox-disabled-checked">Disabled &amp; Checked</label>
+                                </li>
+                                
+                            </ul><!--CLOSES UL CLASS="LIST"-->
+                        </div>
+                        <div class="skin-section">
+                            <h4>Radio Buttons</h4>
+                            <ul class="list">
+                            	<li>
+                                	<input type="radio" id="minimal-radio-1" class="iradio_minimal-red" name="minimal-radio" />
+                                    <label for="minimal-radio-1">Normal Radio Button</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="minimal-radio-2" class="iradio_minimal-red" name="minimal-radio" checked />
+                                    <label for="minimal-radio-2">Normal Radio Button Checked</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="minimal-radio-disabled" class="iradio_minimal-red" disabled />
+                                    <label for="minimal-radio-disabled">Disabled Radio Button</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="minimal-radio-disabled-checked" class="iradio_minimal-red" disabled checked />
+                                    <label for="minimal-radio-disabled-checked">Disabled &amp; Checked Radio Button</label>
+                                </li>
+                            </ul><!--CLOSES UL CLASS= LIST-->
+                        </div><!--CLOSES DIV CLASS="SKIN-SECTION"-->
+                        <div class="skin-section skin-states">
+                        	<h4>Other States</h4>
+                            <ul class="list">
+                            	<li>
+                                	<div class="state icheckbox_minimal-red"></div>
+                                    <div class="state iradio_minimal-red"></div>
+                                    Normal
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_minimal-red hover"></div>
+                                    <div class="state iradio_minimal-red hover"></div>
+                                    Hover
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_minimal-red checked"></div>
+                                    <div class="state iradio_minimal-red checked"></div>
+                                    Checked
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_minimal-red disabled"></div>
+                                    <div class="state iradio_minimal-red disabled"></div>
+                                    Disabled
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_minimal-red disabled checked"></div>
+                                    <div class="state iradio_minimal-red disabled checked"></div>
+                                    Disabled &amp; checked
+                                </li>
+                            </ul><!-- closes ul-->
+                        </div><!--CLOSES SKIN STATES-->
+                        <script>
+							$(document).ready(function(){
+								$('.skin-minimal input').iCheck({
+									checkboxClass: 'icheckbox_minimal-red',
+									radioClass: 'iradio_minimal-red',
+									increaseArea: '20%'
+								});
+							});
+							
+						</script>			
+                	</dd><!--CLOSES DD CLASS="SELECTED"-->
+                </dl><!--CLOSES DL CLASS="CLEAR"-->
+                
+            </div><!--CLOSES DIV CLASS="SKIN SKIN-MINIMAL"-->
+            
+            
+            
+            
+            
+            
+            <!------------SQUARE SKINS------------>
+            <div class="skin skin-square">
+            	<h3>Square Skins</h3>
+                <dl class="clear">
+                	<dd class="selected">
+                        <div class="skin-section">
+                            <h4>Checkboxes</h4>
+                            <ul class="list">
+                                <li>
+                                	<input type="checkbox" id="square-checkbox-1" class="icheckbox_square-orange" />
+                                    <label for="square-checkbox-1">Normal Checkbox Unchecked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="square-checkbox-2" class="icheckbox_square-orange" checked/>
+                                    <label for="square-checkbox-2">Normal Checkbox Checked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="square-checkbox-disabled" class="icheckbox_square-orange" disabled />
+                                    <label for="square-checkbox-disabled">Disabled Checkbox</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="square-checkbox-disabled-checked" class="icheckbox_square-orange" disabled checked />
+                                    <label for="square-checkbox-disabled-checked">Disabled &amp; Checked</label>
+                                </li>
+                                
+                            </ul><!--CLOSES UL CLASS="LIST"-->
+                        </div>
+                        <div class="skin-section">
+                            <h4>Radio Buttons</h4>
+                            <ul class="list">
+                            	<li>
+                                	<input type="radio" id="square-radio-1" class="iradio_square-orange" name="square-radio" />
+                                    <label for="square-radio-1">Normal Radio Button</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="square-radio-2" class="iradio_square-orange" name="square-radio" checked />
+                                    <label for="square-radio-2">Normal Radio Button Checked</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="square-radio-disabled" class="iradio_square-orange" disabled />
+                                    <label for="square-radio-disabled">Disabled Radio Button</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="square-radio-disabled-checked" class="iradio_square-orange" disabled checked />
+                                    <label for="square-radio-disabled-checked">Disabled &amp; Checked Radio Button</label>
+                                </li>
+                            </ul><!--CLOSES UL CLASS= LIST-->
+                        </div><!--CLOSES DIV CLASS="SKIN-SECTION"-->
+                        <div class="skin-section skin-states">
+                        	<h4>Other States</h4>
+                            <ul class="list">
+                            	<li>
+                                	<div class="state icheckbox_square-orange"></div>
+                                    <div class="state iradio_square-orange"></div>
+                                    Normal
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_square-orange hover"></div>
+                                    <div class="state iradio_square-orange hover"></div>
+                                    Hover
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_square-orange checked"></div>
+                                    <div class="state iradio_square-orange checked"></div>
+                                    Checked
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_square-orange disabled"></div>
+                                    <div class="state iradio_square-orange disabled"></div>
+                                    Disabled
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_square-orange disabled checked"></div>
+                                    <div class="state iradio_square-orange disabled checked"></div>
+                                    Disabled &amp; checked
+                                </li>
+                            </ul><!-- closes ul-->
+                        </div><!--CLOSES SKIN STATES-->
+                        <script>
+							$(document).ready(function(){
+								$('.skin-square input').iCheck({
+									checkboxClass: 'icheckbox_square-orange',
+									radioClass: 'iradio_square-orange',
+									increaseArea: '20%'
+								});
+							});
+							
+						</script>			
+                	</dd><!--CLOSES DD CLASS="SELECTED"-->
+                </dl><!--CLOSES DL CLASS="CLEAR"-->
+                
+            </div><!--CLOSES DIV CLASS="SKIN SKIN-SQUARE"-->
+            
+            
+            
+            
+            <!------------FLAT SKINS------------>
+            <div class="skin skin-flat">
+            	<h3>Flat Skins</h3>
+                <dl class="clear">
+                	<dd class="selected">
+                        <div class="skin-section">
+                            <h4>Checkboxes</h4>
+                            <ul class="list">
+                                <li>
+                                	<input type="checkbox" id="flat-checkbox-1" class="icheckbox_flat-yellow" />
+                                    <label for="flat-checkbox-1">Normal Checkbox Unchecked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="flat-checkbox-2" class="icheckbox_flat-yellow" checked/>
+                                    <label for="flat-checkbox-2">Normal Checkbox Checked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="flat-checkbox-disabled" class="icheckbox_flat-yellow" disabled />
+                                    <label for="flat-checkbox-disabled">Disabled Checkbox</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="flat-checkbox-disabled-checked" class="icheckbox_flat-yellow" disabled checked />
+                                    <label for="flat-checkbox-disabled-checked">Disabled &amp; Checked</label>
+                                </li>
+                                
+                            </ul><!--CLOSES UL CLASS="LIST"-->
+                        </div>
+                        <div class="skin-section">
+                            <h4>Radio Buttons</h4>
+                            <ul class="list">
+                            	<li>
+                                	<input type="radio" id="flat-radio-1" class="iradio_flat-yellow" name="flat-radio" />
+                                    <label for="flat-radio-1">Normal Radio Button</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="flat-radio-2" class="iradio_flat-yellow" name="flat-radio" checked />
+                                    <label for="flat-radio-2">Normal Radio Button Checked</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="flat-radio-disabled" class="iradio_flat-yellow" disabled />
+                                    <label for="flat-radio-disabled">Disabled Radio Button</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="flat-radio-disabled-checked" class="iradio_flat-yellow" disabled checked />
+                                    <label for="flat-radio-disabled-checked">Disabled &amp; Checked Radio Button</label>
+                                </li>
+                            </ul><!--CLOSES UL CLASS= LIST-->
+                        </div><!--CLOSES DIV CLASS="SKIN-SECTION"-->
+                        <div class="skin-section skin-states">
+                        	<h4>Other States</h4>
+                            <ul class="list">
+                            	<li>
+                                	<div class="state icheckbox_flat-yellow"></div>
+                                    <div class="state iradio_flat-yellow"></div>
+                                    Normal
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_flat-yellow hover"></div>
+                                    <div class="state iradio_flat-yellow hover"></div>
+                                    Hover
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_flat-yellow checked"></div>
+                                    <div class="state iradio_flat-yellow checked"></div>
+                                    Checked
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_flat-yellow disabled"></div>
+                                    <div class="state iradio_flat-yellow disabled"></div>
+                                    Disabled
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_flat-yellow disabled checked"></div>
+                                    <div class="state iradio_flat-yellow disabled checked"></div>
+                                    Disabled &amp; checked
+                                </li>
+                            </ul><!-- closes ul-->
+                        </div><!--CLOSES SKIN STATES-->
+                        <script>
+							$(document).ready(function(){
+								$('.skin-flat input').iCheck({
+									checkboxClass: 'icheckbox_flat-yellow',
+									radioClass: 'iradio_flat-yellow',
+									increaseArea: '20%'
+								});
+							});
+							
+						</script>			
+                	</dd><!--CLOSES DD CLASS="SELECTED"-->
+                </dl><!--CLOSES DL CLASS="CLEAR"-->
+                
+            </div><!--CLOSES DIV CLASS="SKIN SKIN-FLAT"-->
+            
+            
+            
+            
+            <!------------LINE SKINS------------>
+            <div class="skin skin-line">
+            	<h3>Line Skins</h3>
+                <dl class="clear">
+                	<dd class="selected">
+                        <div class="skin-section">
+                            <h4>Checkboxes</h4>
+                            <ul class="list">
+                                <li>
+                                	<input type="checkbox" id="line-checkbox-1" class="icheckbox_line-green"/>
+                                    <label for="line-checkbox-1">Normal Checkbox Unchecked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="line-checkbox-2"  checked/>
+                                    <label for="line-checkbox-2">Normal Checkbox Checked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="line-checkbox-disabled" class="icheckbox_line-green" disabled />
+                                    <label for="line-checkbox-disabled">Disabled Checkbox</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="line-checkbox-disabled-checked" class="icheckbox_line-green" disabled checked />
+                                    <label for="line-checkbox-disabled-checked">Disabled &amp; Checked</label>
+                                </li>
+                                
+                            </ul><!--CLOSES UL CLASS="LIST"-->
+                        </div>
+                        <div class="skin-section">
+                            <h4>Radio Buttons</h4>
+                            <ul class="list">
+                            	<li>
+                                	<input type="radio" id="line-radio-1" class="iradio_line-green" name="line-radio" />
+                                    <label for="line-radio-1">Normal Radio Button</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="line-radio-2" class="iradio_line-green" name="line-radio" checked />
+                                    <label for="line-radio-2">Normal Radio Button Checked</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="line-radio-disabled" class="iradio_line-green" disabled />
+                                    <label for="line-radio-disabled">Disabled Radio Button</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="line-radio-disabled-checked" class="iradio_line-green" disabled checked />
+                                    <label for="line-radio-disabled-checked">Disabled &amp; Checked Radio Button</label>
+                                </li>
+                            </ul><!--CLOSES UL CLASS= LIST-->
+                        </div><!--CLOSES DIV CLASS="SKIN-SECTION"-->
+                        <div class="skin-section skin-states">
+                        	<h4>Other States</h4>
+                            <ul class="list">
+                            	<li>
+                                	<div class="state icheckbox_line-green">
+                                        <div class="icheck_line-icon"></div>
+                                        Normal
+                                    </div>
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_line-green hover">
+                                    	<div class="icheck_line-icon"></div>
+                                        Hover
+                                    </div>
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_line-green checked">
+                                    	<div class="icheck_line-icon"></div>
+                                        Checked
+                                    </div>
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_line-green disabled">
+                                    	<div class="icheck_line-icon"></div>
+                                        Disabled
+                                    </div>
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_line-green disabled checked">
+                                    	<div class="icheck_line-icon"></div>
+                                        Disabled &amp; Checked
+                                    </div>
+                                </li>
+                            </ul><!-- closes ul-->
+                        </div><!--CLOSES SKIN STATES-->
+                        <script>
+							$(document).ready(function(){
+							  $('.skin-line input').each(function(){
+								var self = $(this),
+								  label = self.next(),
+								  label_text = label.text();
+				
+								label.remove();
+								self.iCheck({
+								  checkboxClass: 'icheckbox_line-green',
+								  radioClass: 'iradio_line-green',
+								  insert: '<div class="icheck_line-icon"></div>' + label_text
+								});
+							  });
+							});
+						</script>			
+                	</dd><!--CLOSES DD CLASS="SELECTED"-->
+                </dl><!--CLOSES DL CLASS="CLEAR"-->
+                
+            </div><!--CLOSES DIV CLASS="SKIN SKIN-LINE"-->
+            
+            
+            
+        </div><!--CLOSES DIV CLASS="SKINS"-->
+     
+      
+
 		
 	</body>
 </html>
