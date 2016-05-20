@@ -123,25 +123,41 @@
 					<section class="fourB">
 						<h3>Checkboxes</h3>
 						<pre><code>
-
+&lt;li&gt; 
+	&lt;input type=&quot;checkbox&quot; id=&quot;minimal-checkbox-2&quot; class=&quot;icheckbox_minimal-red&quot; checked/&gt; 
+	&lt;label for=&quot;minimal-checkbox-2&quot;&gt;Normal Checkbox Checked&lt;/label&gt; 
+&lt;/li&gt;
 						</code></pre>
 					</section>	
 					<section class="fourC">
 						<h3>Radio Buttons</h3>
 						<pre><code>
-						
+&lt;li&gt;
+	&lt;input type=&quot;radio&quot; id=&quot;minimal-radio-2&quot; class=&quot;iradio_minimal-red&quot; name=&quot;minimal-radio&quot; checked /&gt; 
+	&lt;label for=&quot;minimal-radio-2&quot;&gt;Normal Radio Button Checked&lt;/label&gt;		
+&lt;/li&gt;				
 						</code></pre>
 					</section>	
 					<section class="fourD">
 						<h3>Other States</h3>
 						<pre><code>
-				
+&lt;li&gt; 
+	&lt;div class=&quot;state icheckbox_minimal-red hover&quot;&gt;&lt;/div&gt; 
+	&lt;div class=&quot;state iradio_minimal-red hover&quot;&gt;&lt;/div&gt; 
+	Hover 
+&lt;/li&gt;			
 						</code></pre>
 					</section>	
 					<section class="fourE">
 						<h3>Script</h3>
 						<pre><code>
-						
+$(document).ready(function(){ 
+	$('.skin-minimal input').iCheck({ 
+		checkboxClass: 'icheckbox_minimal-red', 
+		radioClass: 'iradio_minimal-red', 
+		increaseArea: '20%' 
+	});
+});						
 						</code></pre>
 					</section>
 				</section><!-- closes four-->
@@ -154,25 +170,41 @@
 					<section class="fiveB">
 						<h3>Checkboxes</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;input type=&quot;checkbox&quot; id=&quot;square-checkbox-2&quot; class=&quot;icheckbox_square-orange&quot; checked/&gt; 
+	&lt;label for=&quot;square-checkbox-2&quot;&gt;Normal Checkbox Checked&lt;/label&gt; 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="fiveC">
 						<h3>Radio Buttons</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;input type=&quot;radio&quot; id=&quot;square-radio-2&quot; class=&quot;iradio_square-orange&quot; name=&quot;square-radio&quot; checked /&gt; 
+	&lt;label for=&quot;square-radio-2&quot;&gt;Normal Radio Button Checked&lt;/label&gt; 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="fiveD">
 						<h3>Other States</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;div class=&quot;state icheckbox_square-orange hover&quot;&gt;&lt;/div&gt; 
+	&lt;div class=&quot;state iradio_square-orange hover&quot;&gt;&lt;/div&gt; 
+	Hover 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="fiveE">
 						<h3>Script</h3>
 						<pre><code>
-							
+$(document).ready(function(){
+	$('.skin-square input').iCheck({
+		checkboxClass: 'icheckbox_square-orange',
+		radioClass: 'iradio_square-orange',
+		increaseArea: '20%'
+	});
+});							
 						</code></pre>
 					</section>
 				</section><!--closes five-->
@@ -185,25 +217,41 @@
 					<section class="sixB">
 						<h3>Checkboxes</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;input type=&quot;checkbox&quot; id=&quot;flat-checkbox-2&quot; class=&quot;icheckbox_flat-yellow&quot; checked/&gt; 
+	&lt;label for=&quot;flat-checkbox-2&quot;&gt;Normal Checkbox Checked&lt;/label&gt; 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="sixC">
 						<h3>Radio Buttons</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;input type=&quot;radio&quot; id=&quot;flat-radio-2&quot; class=&quot;iradio_flat-yellow&quot; name=&quot;flat-radio&quot; checked /&gt; 
+	&lt;label for=&quot;flat-radio-2&quot;&gt;Normal Radio Button Checked&lt;/label&gt; 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="sixD">
 						<h3>Other States</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;div class=&quot;state icheckbox_flat-yellow hover&quot;&gt;&lt;/div&gt; 
+	&lt;div class=&quot;state iradio_flat-yellow hover&quot;&gt;&lt;/div&gt; 
+	Hover 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="SixE">
 						<h3>Script</h3>
 						<pre><code>
-							
+$(document).ready(function(){
+	$('.skin-flat input').iCheck({
+		checkboxClass: 'icheckbox_flat-yellow',
+		radioClass: 'iradio_flat-yellow',
+		increaseArea: '20%'
+	});
+});							
 						</code></pre>
 					</section>
 				</section><!--closes six-->
@@ -216,25 +264,48 @@
 					<section class="sevenB">
 						<h3>Checkboxes</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;input type=&quot;checkbox&quot; id=&quot;line-checkbox-2&quot; checked/&gt; 
+	&lt;label for=&quot;line-checkbox-2&quot;&gt;Normal Checkbox Checked&lt;/label&gt; 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="sevenC">
 						<h3>Radio Buttons</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;input type=&quot;radio&quot; id=&quot;line-radio-2&quot; class=&quot;iradio_line-green&quot; name=&quot;line-radio&quot; checked /&gt; 
+	&lt;label for=&quot;line-radio-2&quot;&gt;Normal Radio Button Checked&lt;/label&gt;
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="sevenD">
 						<h3>Other States</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;div class=&quot;state icheckbox_line-green hover&quot;&gt; 
+	&lt;div class=&quot;icheck_line-icon&quot;&gt;&lt;/div&gt; 
+	Hover &lt;/div&gt; 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="sevenE">
 						<h3>Script</h3>
 						<pre><code>
-							
+$(document).ready(function(){
+  $('.skin-line input').each(function(){
+	var self = $(this),
+	  label = self.next(),
+	  label_text = label.text();
+
+	label.remove();
+	self.iCheck({
+	  checkboxClass: 'icheckbox_line-green',
+	  radioClass: 'iradio_line-green',
+	  insert: '<div class="icheck_line-icon"></div>' + label_text
+	});
+  });
+});							
 						</code></pre>
 					</section>
 					
@@ -248,25 +319,41 @@
 					<section class="eightB">
 						<h3>Checkboxes</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;input type=&quot;checkbox&quot; id=&quot;polaris-checkbox-2&quot; class=&quot;polaris&quot; checked&gt; 
+	&lt;label for=&quot;polaris-checkbox-2&quot;&gt;Normal Checkbox Checked&lt;/label&gt; 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="eightC">
 						<h3>Radio Buttons</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;input type=&quot;radio&quot; id=&quot;polaris-radio-checked&quot; class=&quot;polaris&quot; checked&gt; 
+	&lt;label for=&quot;polaris-radio-checked&quot;&gt;Normal Radio Button Checked&lt;/label&gt; 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="eightD">
 						<h3>Other States</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;div class=&quot;state icheckbox_polaris hover&quot;&gt;&lt;/div&gt; 
+	&lt;div class=&quot;state iradio_polaris hover&quot;&gt;&lt;/div&gt; 
+	Hover 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="eightE">
 						<h3>Script</h3>
 						<pre><code>
-							
+$(document).ready(function(){
+  $('input.polaris').iCheck({
+    checkboxClass: 'icheckbox_polaris',
+    radioClass: 'iradio_polaris',
+    increaseArea: '-10%' // optional
+  });
+});							
 						</code></pre>
 					</section>
 					
@@ -280,25 +367,41 @@
 					<section class="nineB">
 						<h3>Checkboxes</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;input type=&quot;checkbox&quot; id=&quot;futurico-checkbox-2&quot; class=&quot;futurico&quot; checked&gt; 
+	&lt;label for=&quot;futurico-checkbox-2&quot;&gt;Normal Checkbox Checked&lt;/label&gt; 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="nineC">
 						<h3>Radio Buttons</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;input type=&quot;radio&quot; id=&quot;futurico-radio-2&quot; class=&quot;futurico&quot; checked&gt; 
+	&lt;label for=&quot;futurico-radio-2&quot;&gt;Normal Radio Button Checked&lt;/label&gt; 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="nineD">
 						<h3>Other States</h3>
 						<pre><code>
-							
+&lt;li&gt; 
+	&lt;div class=&quot;state icheckbox_futurico hover&quot;&gt;&lt;/div&gt; 
+	&lt;div class=&quot;state iradio_futurico hover&quot;&gt;&lt;/div&gt; 
+	Hover 
+&lt;/li&gt;							
 						</code></pre>
 					</section>
 					<section class="nineE">
 						<h3>Script</h3>
 						<pre><code>
-							
+$(document).ready(function(){
+  $('input.futurico').iCheck({
+    checkboxClass: 'icheckbox_futurico',
+    radioClass: 'iradio_futurico',
+    increaseArea: '20%' // optional
+  });
+});							
 						</code></pre>
 					</section>
 				</section>
