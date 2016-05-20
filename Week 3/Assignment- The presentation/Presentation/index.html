@@ -11,6 +11,7 @@
         <link href="css/style.css" rel="stylesheet" />
         <link href="includes/icheck/demo/css/normalize.css" rel="stylesheet">
         <link href="includes/icheck/demo/css/custom.css" rel="stylesheet" />
+        <link href="includes/icheck/skins/polaris/polaris.css" rel="stylesheet"/>
         <link href="includes/icheck/skins/all.css" rel="stylesheet" />
      	<link href="includes/icheck/skins/minimal/red.css" rel="stylesheet" /> 
         <link href="includes/icheck/skins/minimal/orange.css" rel="stylesheet" /> 
@@ -62,6 +63,7 @@
                                 	<input type="checkbox" id="minimal-checkbox-disabled-checked" class="icheckbox_minimal-red" disabled checked />
                                     <label for="minimal-checkbox-disabled-checked">Disabled &amp; Checked</label>
                                 </li>
+                                
                                 
                             </ul><!--CLOSES UL CLASS="LIST"-->
                         </div>
@@ -444,7 +446,21 @@
                     	<div class="skin-section">
                         	<h4>Checkboxes</h4>
                             <ul class="list">
-                            	
+                            	<li>
+                            		<input type="checkbox" id="polaris-checkbox-1" class="polaris">
+                            		<label for="polaris-checkbox-1">Normal Checkbox Unchecked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="polaris-checkbox-2" class="polaris" checked>
+                                	<label for="polaris-checkbox-2">Normal Checkbox Checked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="polaris-disabled" class="polaris" disabled>
+                                	<label for="polaris-disabled">Disabled Checkbox</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="polaris-disabled-checked" class="polaris" disabled checked>
+                                	<label for="polaris-disabled-checked">Disabled &amp; Checked</label>
                                 </li>
                             </ul>
                         </div><!--CLOSES SKIN-SECTION-->
@@ -452,7 +468,20 @@
                         	<h4>Radio Buttons</h4>
                             <ul class="list">
                             	<li>
-                                
+                                	<input type="radio" id="polaris-radio" class="polaris">
+                                	<label for="polaris-radio">Normal Radio Button Unchecked</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="polaris-radio-checked" class="polaris" checked>
+                                	<label for="polaris-radio-checked">Normal Radio Button Checked</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="polaris-radio-disabled" class="polaris" disabled>
+                                	<label for="polaris-radio-disabled">Disabled Radio Button</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="polaris-radio-disabled-checked" class="polaris" disabled checked>
+                                	<label for="polaris-radio-disabled-checked">Disabled &amp; Checked</label>
                                 </li>
                             </ul>
                         </div><!--CLOSES SKIN-SECTION-->
@@ -460,10 +489,41 @@
                         	<h4>Other States</h4>
                             <ul class="list">
                             	<li>
-                                
+                                	<div class="state icheckbox_polaris"></div>
+                                	<div class="state iradio_polaris"></div>
+                                	Normal
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_polaris hover"></div>
+                                	<div class="state iradio_polaris hover"></div>
+                                	Hover
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_polaris checked"></div>
+                                	<div class="state iradio_polaris checked"></div>
+                                	Checked
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_polaris disabled"></div>
+                                	<div class="state iradio_polaris disabled"></div>
+                                	Disabled
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_polaris disabled checked"></div>
+                                	<div class="state iradio_polaris disabled checked"></div>
+                                	Disabled &amp; Checked
                                 </li>
                             </ul>
                         </div> <!--CLOSES SKIN SECTION SKIN STATES-->
+                        <script>
+							$(document).ready(function(){
+							  $('input.polaris').iCheck({
+							    checkboxClass: 'icheckbox_polaris',
+							    radioClass: 'iradio_polaris',
+							    increaseArea: '-10%' // optional
+							  });
+							});
+						</script>
                     </dd><!--CLOSES CLASS SELECTED-->
                 </dl><!--CLOSES CLASS CLEAR-->
             </div><!--CLOSES SKIN SKIN-POLARIS-->
@@ -480,7 +540,20 @@
                         	<h4>Checkboxes</h4>
                             <ul class="list">
                             	<li>
-                                	
+                                	<input type="checkbox" id="futurico-checkbox-1" class="futurico">
+                                	<label for="futurico-checkbox-1">Normal Checkbox Unchecked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="futurico-checkbox-2" class="futurico" checked>
+                                	<label for="futurico-checkbox-2">Normal Checkbox Checked</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="futurico-disabled" class="futurico" disabled>
+                                	<label for="futurico-disabled">Disabled Checkbox</label>
+                                </li>
+                                <li>
+                                	<input type="checkbox" id="futurico-disabled-checked" class="futurico" disabled checked>
+                                	<label for="futurico-disabled-checked">Disabled &amp; Checked</label>
                                 </li>
                             </ul>
                         </div><!--CLOSES SKIN-SECTION-->
@@ -488,7 +561,20 @@
                         	<h4>Radio Buttons</h4>
                             <ul class="list">
                             	<li>
-                                
+                                	<input type="radio" id="futurico-radio-1" class="futurico">
+                                	<label for="futurico-radio-1">Normal Radio Button Unchecked</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="futurico-radio-2" class="futurico" checked>
+                                	<label for="futurico-radio-2">Normal Radio Button Checked</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="futurico-disabled" class="futurico" disabled>
+                                	<label for="futurico-disabled">Disabled Radio Button</label>
+                                </li>
+                                <li>
+                                	<input type="radio" id="futurico-disabled-checked" class="futurico" disabled checked>
+                                	<label for="futurico-disabled-checked">Disabled &amp; Checked</label>
                                 </li>
                             </ul>
                         </div><!--CLOSES SKIN-SECTION-->
@@ -496,10 +582,41 @@
                         	<h4>Other States</h4>
                             <ul class="list">
                             	<li>
-                                
+                                	<div class="state icheckbox_futurico"></div>
+                                	<div class="state iradio_futurico"></div>
+                                	Normal
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_futurico hover"></div>
+                                	<div class="state iradio_futurico hover"></div>
+                                	Hover
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_futurico checked"></div>
+                                	<div class="state iradio_futurico checked"></div>
+                                	Checked
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_futurico disabled"></div>
+                                	<div class="state iradio_futurico disabled"></div>
+                                	Disabled
+                                </li>
+                                <li>
+                                	<div class="state icheckbox_futurico disabled checked"></div>
+                                	<div class="state iradio_futurico disabled checked"></div>
+                                	Disabled &amp; Checked
                                 </li>
                             </ul>
                         </div> <!--CLOSES SKIN SECTION SKIN STATES-->
+                        <script>
+							$(document).ready(function(){
+							  $('input.futurico').iCheck({
+							    checkboxClass: 'icheckbox_futurico',
+							    radioClass: 'iradio_futurico',
+							    increaseArea: '20%' // optional
+							  });
+							});
+						</script>
                     </dd><!--CLOSES CLASS SELECTED-->
                 </dl><!--CLOSES CLASS CLEAR-->
             </div><!--CLOSES SKIN SKIN-FUTURICO-->
